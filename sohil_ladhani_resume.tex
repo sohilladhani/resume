@@ -1,0 +1,216 @@
+%-------------------------
+% Resume in Latex
+% Author : Sohil Ladhani
+% License : MIT
+%------------------------
+
+\documentclass{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%---------------------------------------------------------
+%%%%%%  Resume STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/in/sohilladhani}{\large Sohil Ladhani}} & Email : \href{mailto:sohilladhani@gmail.com}{sohilladhani@gmail.com}\\
+  \href{https://www.linkedin.com/in/sohilladhani/}{https://www.linkedin.com/in/sohilladhani} & Mobile : +91 9573236099 \\
+  & \href{https://www.sohilladhani.com}{www.sohilladhani.com}
+\end{tabular*}
+
+\vspace{-5pt}
+%-----------EXPERIENCE-----------------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+\resumeSubheading
+      {Cisco Systems}{Bengaluru}
+      {Software Engineer 2}{March 2019 - Present}
+      \resumeItemListStart
+        \resumeItem{License Manager}
+          {Part of the team responsible for maintaining license manager code for Data Center Switches.}
+        \resumeItem{Automation}
+		{Led a team to develop end-to-end sanity scripts, which improved the turn around time to commit the code by 68\%, by making the sanity scripts a part of the developer workflow by deploying the scripts to a CI/CD pipeline.}
+        \resumeItem{\underline{Leveraged knowledge in}}
+          {C, Python, PyATS, Data Center Networks}  
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Cisco Systems}{Bengaluru}
+      {Network Engineer}{Jul 2017 - March 2019}
+      \resumeItemListStart
+        \resumeItem{Core developer}
+          {Core member of Tracker and Operations Platform, which is a unified platform to track end-to-end customer deliverables. Helped reduce the delivery time to 74\% of the previous time.} 
+        \resumeItem{Trusted Advisor}
+          {Responsible for analyzing potential issues in the network of the European customers, and suggesting proactive countermeasures to avoid and mitigate those issues.}
+         \resumeItem{\underline{Leveraged knowledge in}}
+          {Python, Django, JavaScript} 
+      \resumeItemListEnd
+
+    \resumeSubheading
+    {Cisco Systems}{Bengaluru}
+    {Software Engineer, Intern}{Jan 2017 - Jun 2017}
+      \resumeItemListStart
+        \resumeItem{UT framework for Cisco IOS-XE stack}
+          {Developed a module within UT framework responsible for capturing and replaying database configuration of a Cisco Catalyst switch onto a virtual environment to perform white-box testing.}
+        \resumeItem{Simulation of device configurations}
+          {Built an XML Parser in 'C' to parse the device configurations and simulate the same in the virtual environment. Wrote test-cases and prepared mocks for different components using Lua script.}
+        \resumeItem{\underline{Leveraged knowledge in}}
+          {C, Lua, Simple API for XML (libxml2)}  
+      \resumeItemListEnd
+
+    \resumeSubheading
+    {BITS Pilani, Hyderabad}{Hyderabad}
+      {Teaching Assitant}{Aug 2015 - Dec 2016}
+      \resumeItemListStart
+        \resumeItem {Java Hands-on Lab}
+          {Designed assignments and supervised the lab sessions attended by 250+ students regularly.}
+        \resumeItem {Distributed Operating Systems}
+          {Helped instructor in charge in setting up and evaluating the examination papers.}
+        \resumeItem{\underline{Leveraged knowledge in}}
+          {Core Java, RPC, C}
+      \resumeItemListEnd    
+
+    \resumeSubheading
+      {Thomson Reuters}{Ahmedabad}
+      {Associate Software Engineer}{Aug 2013 - Oct 2014}
+      \resumeItemListStart
+        \resumeItem{Developer}
+          {Served as a developer of AgileTax, a leading software from the tax preparation portfolio. Was responsible for developing and testing new features as per business requirements.}
+        \resumeItem{Build Automation Lead}
+          {Improved the daily, weekly and bi-weekly software builds by over 30\% by fully automating the build process using Microsoft Team Foundation Server.}
+        \resumeItem{\underline{Leveraged knowledge in}}
+          {C\# .NET, VB6}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+
+  \begin{itemize}
+    \item \small{{\textbf{Brainf**k Interpreter}}\vspace{-8pt}}
+    \begin{itemize}
+      \item \small{{Developed a web-based interpreter for brainf**k language in Python.\vspace{-3pt}}}
+      \item \small{{Incorporated Python Lex-Yacc (PLY) for Lexical and Syntactical analysis of the Brainf**k source code.\vspace{-3pt}}}
+      \item \small{{\textbf{\underline{Utilized:}} Python, CherryPy web framework, PLY, HTML, CSS, JavaScript\vspace{-3pt}}}
+    \end{itemize}
+  \end{itemize}
+
+  \begin{itemize}
+    \item \small{{\textbf{Yet Another Network Controller} (Opensource Contribution)}\vspace{-8pt}}
+    \begin{itemize}
+      \item \small{{Submitted a patch to Yet Another Network Controller (yanc).\vspace{-3pt}}}
+      \item \small{{Modified the code to conform to OpenFlow 1.1 by changing the size of the incoming packets of the OpenFlow switch.\vspace{-3pt}}}
+      \item \small{{\textbf{\underline{Utilized:}} C++, OpenFlow protocol, SDN\vspace{-3pt}}}
+    \end{itemize}
+  \end{itemize}
+
+  \begin{itemize}
+    \item \small{{\textbf{Simulation and Performance Analysis of Wireless SDN}}\vspace{-8pt}}
+    \begin{itemize}
+      \item \small{{Simulated a wireless SDN to analyze the potential advantages of SDN over wireless networks.\vspace{-3pt}}}
+      \item \small{{Successfuly tested 2 techniques of mobile handoffs: 1. Proactive and 2. Reactive.\vspace{-3pt}}}
+      \item \small{{\textbf{\underline{Utilized:}} Python, POX (controller), OpenNet (simulator), NetAnim (topologies)\vspace{-3pt}}}
+    \end{itemize}
+  \end{itemize}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+
+  \resumeSubheading
+      {Birla Institute of Technology and Science, Pilani}{Hyderabad, India}
+      {Master of Engineering in Computer Science;  CGPA: 9.08}{Aug 2015 -- Jun 2017}
+      
+  \resumeSubheading
+      {Gujarat Technological University}{Gujarat, India}
+      {Bachelor of Engineering in Computer Science;  CGPA: 8.15}{Aug 2009 -- Jun 2013}
+    
+  \resumeSubHeadingListEnd
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \small{\textbf{Languages}{: (proficient) Java, C, (working knowledge) Python (familiar) Javascript, SQL  }\vspace{-5pt}}
+   }
+   \item{
+     \small{\textbf{Tools}{: Git, GDB, Valgrind, Packet Tracer, Docker} \vspace{-5pt}}
+   }
+   \item{
+     \small{\textbf{Frameworks/Libraries}{: nltk, CherryPy, Django, StAX, pickle, SAX, pip, Hadoop, libxml2} \vspace{-5pt}}
+   }
+ \resumeSubHeadingListEnd
+
+ %--------CERTIFICATIONS------------
+%\section{Certifications}
+% \resumeSubHeadingListStart
+%   \item{Cisco Certified Network Associate (CCNA)}
+% \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
